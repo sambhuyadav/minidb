@@ -1,0 +1,18 @@
+[project]
+name = "minidb"
+version = "1.0.0"
+description = "MiniDB relational database engine for Advanced DBMS Track C"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Team PageFault" }]
+dependencies = []
+
+[project.scripts]
+minidb = "minidb.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["minidb"]
